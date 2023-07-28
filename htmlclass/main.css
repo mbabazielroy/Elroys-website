@@ -125,6 +125,23 @@ footer p {
     color: #666;
 }
 
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust the size of the icons as needed */
+    height: 30px;
+}
+
+
 /* Adjustments for smaller screens
 @media screen and (max-width: 480px) {
     header h1 {
