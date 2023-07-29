@@ -16,28 +16,35 @@ header {
     background: url("-dsc1393.JPG") center/cover no-repeat;
     height: 100vh; /* Set the header to take up the whole screen */
     padding-left: 20px; /* Add some left padding to create space for the text */
+    background-attachment: fixed; /* Keep the background picture stationary */
 }
 
 header h1 {
     position: absolute; /* Position the h1 element absolutely within the header */
-    top: 50%; /* Position it 50% from the top of the header */
-    left: 20px; /* Position it 20px from the left of the header */
+    top: 45%; /* Position it 50% from the top of the header */
+    left: 180px; /* Position it 20px from the left of the header */
     transform: translateY(-50%); /* Center the h1 element vertically */
-    font-size: 36px;
-    font-style: italic; /* Set the font style to italic */
+    font-size: 26px;
+    /*font-style: italic; /*Set the font style to italic*/
     margin-bottom: 10px;
-    color: #0e0d0d;
+    color: #0b0b0b;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: Helvetica, sans-serif; /* Set the font family to cursive */
 }
 
 header h2 {
     position: absolute; /* Position the h2 element absolutely within the header */
-    top: 70%; /* Position it 70% from the top of the header */
-    left: 20px; /* Position it 20px from the left of the header */
+    top: 55%; /* Position it 60% from the top of the header */
+    left: 35px; /* Position it 20px from the left of the header */
     transform: translateY(-50%); /* Center the h2 element vertically */
-    font-size: 24px;
+    font-size: 60px;
     color: #060606;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Add a transition effect to header text */
+header h1, header h2 {
+    transition: all 0.3s ease;
 }
 
 /* Adjustments for smaller screens */
@@ -55,6 +62,19 @@ header h2 {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
+    /* Add an animation effect to the container */
+    animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .tabs {
@@ -64,7 +84,6 @@ header h2 {
     margin-bottom: 20px;
 }
 
-
 .tabs li {
     cursor: pointer;
     padding: 10px 20px;
@@ -72,11 +91,18 @@ header h2 {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-right: 5px;
+    /* Add a transition effect on hover */
+    transition: background-color 0.3s ease;
 }
 
 .tabs li.current {
     background-color: #007bff;
     color: #fff;
+}
+
+/* Add a hover effect to the tabs */
+.tabs li:hover {
+    background-color: #ddd;
 }
 
 .tab-content {
@@ -114,6 +140,11 @@ ul li a {
     color: #007bff;
 }
 
+/* Add a hover effect to links */
+ul li a:hover {
+    color: #0099ff;
+}
+
 footer {
     text-align: center;
     margin-top: 30px;
@@ -139,8 +170,13 @@ footer p {
 .social-icons img {
     width: 30px; /* Adjust the size of the icons as needed */
     height: 30px;
+    /* Add a hover effect to social icons */
+    transition: transform 0.3s ease;
 }
 
+.social-icons img:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
 
 /* Adjustments for smaller screens
 @media screen and (max-width: 480px) {
