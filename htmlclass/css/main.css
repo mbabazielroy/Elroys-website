@@ -20,23 +20,22 @@ header {
 }
 
 header h1 {
-    position: absolute; /* Position the h1 element absolutely within the header */
-    top: 45%; /* Position it 50% from the top of the header */
-    left: 180px; /* Position it 20px from the left of the header */
-    transform: translateY(-50%); /* Center the h1 element vertically */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 26px;
-    /*font-style: italic; /*Set the font style to italic*/
     margin-bottom: 10px;
     color: #0b0b0b;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: Helvetica, sans-serif; /* Set the font family to cursive */
+    font-family: Helvetica, sans-serif;
 }
 
 header h2 {
-    position: absolute; /* Position the h2 element absolutely within the header */
-    top: 55%; /* Position it 60% from the top of the header */
-    left: 35px; /* Position it 20px from the left of the header */
-    transform: translateY(-50%); /* Center the h2 element vertically */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 60px;
     color: #060606;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -47,22 +46,10 @@ header h1, header h2 {
     transition: all 0.3s ease;
 }
 
-/* Adjustments for smaller screens */
-@media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 28px;
-    }
-
-    header h2 {
-        font-size: 18px;
-    }
-}
-
 .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-    /* Add an animation effect to the container */
     animation: slideUp 1s ease;
 }
 
@@ -91,7 +78,6 @@ header h1, header h2 {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-right: 5px;
-    /* Add a transition effect on hover */
     transition: background-color 0.3s ease;
 }
 
@@ -100,7 +86,6 @@ header h1, header h2 {
     color: #fff;
 }
 
-/* Add a hover effect to the tabs */
 .tabs li:hover {
     background-color: #ddd;
 }
@@ -125,14 +110,12 @@ ul li {
 }
 
 ul li img {
-    width: 200px; /* Adjust the width as needed */
+    width: 200px;
     height: auto;
-    /* border-radius: 50%; To make the images circular, if needed */
 }
 
-/* CSS for rounded image */
 .rounded-img {
-    border-radius: 10px; /* Adjust the radius value as per your preference */
+    border-radius: 10px;
 }
 
 ul li a {
@@ -140,7 +123,6 @@ ul li a {
     color: #007bff;
 }
 
-/* Add a hover effect to links */
 ul li a:hover {
     color: #0099ff;
 }
@@ -168,23 +150,11 @@ footer p {
 }
 
 .social-icons img {
-    width: 30px; /* Adjust the size of the icons as needed */
+    width: 30px;
     height: 30px;
-    /* Add a hover effect to social icons */
     transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
-    transform: scale(1.2); /* Scale up the icon on hover */
+    transform: scale(1.2);
 }
-
-/* Adjustments for smaller screens
-@media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 28px;
-    }
-
-    header h2 {
-        font-size: 18px;
-    }
-} */
